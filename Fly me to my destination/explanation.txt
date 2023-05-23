@@ -1,0 +1,19 @@
+
+I have use the greedy algorithm to find the solution.
+
+step 1: Create the ans array whose index represent if plane start from that index then how many time i need to change the plane to reach the destination.
+
+step 2: Start from the end as the smallest problem is in the end.( think you are standing in the destination then 0 planes needed to reach destination. ).
+
+step 3: From last go reverse wise to the start of the array and check from that index how far the single plane can go.
+
+        situation 1: if the current index plane have 0 fuel then we can't reach destination ( -1 );
+        situation 2: if the current index plane can go beyond the array length then only one plane is needed.( itself it can lead you to destination )
+        situation 3: check all the index that plane can go and find the minimum value and add 1 to it. that will be the ans for that index.
+
+
+
+
+
+
+
