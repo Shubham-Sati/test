@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(184, 227, 242 , 0.3);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotate{
+    width: 100px;
+    height: 100px;
+    animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#show-umbrella{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#umbrella-image{
+    width: 60%;
+    height: 60%;
+}
+
+#logo-image{
+    width: 12%;
+    height: 8%;
+    display: none;
+    position: absolute;
+    bottom: 8%;
+    left: 44%;
+}
+
+.umbrella-customization > h1{
+    font-size: 44px;
+}
+
+.colours{
+    display: flex;
+    gap: 20px;
+}
+
+.colours > button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blue{
+    background-color: blue;
+    border: 4px solid lightblue;
+}
+
+.pink{
+    background-color: pink;
+    border: none;
+}
+
+.yellow{
+    background-color: yellow;
+    border: none;
+}
+
+.uploader{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uploader > h3{
+    font-size: 20px;
+    margin: 0;
+}
+
+.uploader > span{
+    opacity: 0.6;
+}
+
+#input-div{
+    width: 90%;
+    height: 40px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-label{
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    color: white;
+    cursor: pointer;
+}
+
+#input-image{
+    position: absolute;
+    left: 3%;
+    fill: white;
+}
+
+#input-div > input{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
